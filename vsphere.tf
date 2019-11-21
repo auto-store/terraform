@@ -17,7 +17,7 @@ data "vsphere_datastore" "datastore" {
 }
 
 data "vsphere_resource_pool" "pool" {
-  name          = "/"
+  name          = "NetApp_HCI-Cluster-01/Resources"
   datacenter_id = "${data.vsphere_datacenter.dc.id}"
 }
 
